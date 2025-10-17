@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  margin-top: 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #22c55e;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #16a34a;
+}
+
+/* Features */
+.features {
+  background-color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background-color: #f1f5f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #e0f2fe;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: auto;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 0;
+  }
+
+  .testimonials-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .testimonial {
+    max-width: 45%;
+  }
+}
